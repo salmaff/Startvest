@@ -1,0 +1,45 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 100px;
+    border: 1px solid black;
+    background-color: red;
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links li {
+    margin: 0 18px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+#user-signup {
+    padding: 7px 52px;
+    border: 1px solid white;
+    border-radius: 34px;
+    background: #3b41e3;
+}
+
+#my-account {
+    padding: 7px 33px;
+    border: 1px solid white;
+    border-radius: 34px;
+    background: #3b41e3;
+}
