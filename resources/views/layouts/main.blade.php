@@ -11,6 +11,9 @@
     @section('navbar')
     <div class="nav">
         <nav>
+            <svg id="body-bg" xmlns="http://www.w3.org/2000/svg" width="1440" height="693" viewBox="0 0 1440 693" fill="none">
+                <path d="M0 0H1440V572L0 693V0Z" fill="#3B41E3"/>
+            </svg>
             <div class="nav-container">
                 <div class="link-container">
                     <div class="logo">
@@ -34,4 +37,9 @@
         </nav>
     </div>
 </body>
+<script>
+    const width = window.innerWidth;
+    const svg = document.querySelector('#body-bg')
+    console.log(width)
+</script>
 </html>
