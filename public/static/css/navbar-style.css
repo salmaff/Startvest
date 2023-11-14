@@ -8,7 +8,6 @@ svg {
     align-items: center;
     justify-content: space-between;
     margin: 0 100px;
-    border: 1px solid black;
 }
 
 .link-container {
@@ -27,6 +26,12 @@ svg {
     margin: 0 18px;
 }
 
+.links li:hover {
+    cursor: default;
+    color: #ff872e;
+    transition: 0.5s;
+}
+
 .button-container {
     display: flex;
     align-items: center;
@@ -34,14 +39,24 @@ svg {
     color: white;
 }
 
+#user-signup:hover,
+#my-account:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 3px 7px black;
+    transition: 0.5s;
+}
+
 #user-signup {
     padding: 7px 52px;
     border: 1px solid white;
     border-radius: 34px;
     background: #3b41e3;
+    cursor: pointer;
 }
 
 #my-account {
+    cursor: pointer;
     padding: 7px 33px;
     border: 1px solid white;
     border-radius: 34px;

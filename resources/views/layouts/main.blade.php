@@ -11,9 +11,9 @@
     @section('navbar')
     <div class="nav">
         <nav>
-            <svg id="body-bg" xmlns="http://www.w3.org/2000/svg" width="1440" height="693" viewBox="0 0 1440 693" fill="none">
-                <path d="M0 0H1440V572L0 693V0Z" fill="#3B41E3"/>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="693" viewBox="0 0 1920 693" fill="none">
+                <path d="M0 0H1920V572L0 693V0Z" fill="#3B41E3"/>
+              </svg>
             <div class="nav-container">
                 <div class="link-container">
                     <div class="logo">
@@ -35,6 +35,9 @@
                 </div>
             </div>
         </nav>
+    </div>
+    <div class="main-content">
+        @yield('main-content')
     </div>
 </body>
 <script>
