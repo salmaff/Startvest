@@ -7,10 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ url('/static/css/navbar-style.css') }}">
-    <link rel="stylesheet" href="{{ url('/static/css/footer-style.css') }}">
-    <link rel="stylesheet" href="{{ url('/static/css/landing-style.css') }}">
-    <link rel="stylesheet" href="{{ url('/static/css/env-rizfi.css') }}">
+    <link rel="stylesheet" href="{{ url('/static/css/rizfi/navbar-style.css') }}">
+    <link rel="stylesheet" href="{{ url('/static/css/rizfi/footer-style.css') }}">
+    <link rel="stylesheet" href="{{ url('/static/css/rizfi/env.css') }}">
 </head>
 <body>
     @section('navbar')
