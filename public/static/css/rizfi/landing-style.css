@@ -1,5 +1,5 @@
 .caption-container {
-    margin: 105px 100px;
+    margin: 105px 150px;
     display: flex;
     justify-content: space-between;
 }
@@ -34,6 +34,21 @@
     font-weight: 600;
 }
 
+.caption-cards {
+    display: flex;
+}
+
+.caption-cards:hover .big-card {
+    transition: 0.5s ease;
+    z-index: 0;
+    filter: blur(3px);
+    cursor: pointer;
+}
+
+.caption-cards:hover .bg-card {
+    filter: blur(0px);
+}
+
 .big-card {
     background-color: white;
     width: 370px;
@@ -43,6 +58,10 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-right: 200px;
+    z-index: 3;
+    filter: blur(0px);
+    transition: 0.3s ease;
 }
 
 #drone-img {
@@ -95,4 +114,85 @@
     color: #222;
     font-size: 16px;
     font-weight: 600;
+}
+
+.bg-card {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    z-index: 1;
+    margin-left: 250px;
+    margin-top: 70px;
+}
+
+.bg-card {
+    filter: blur(2px);
+    transition: 0.3s ease;
+}
+
+.med-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 160px;
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+    line-height: 30px;
+    background: #fff;
+    box-shadow: 6px 8px 18px 0px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 230px;
+    height: 250px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: -6px 8px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.profile-name {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.profile-name .position {
+    color: #969696;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.review {
+    margin-top: 10px;
+}
+
+.sub-review {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+#star-review {
+    color: #222;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+#total-projects {
+    color: #969696;
+    font-size: 11px;
+    font-weight: 400;
 }

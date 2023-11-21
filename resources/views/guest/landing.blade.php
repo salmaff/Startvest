@@ -45,6 +45,35 @@
                     </div>
                 </div>
             </div>
+            <div class="bg-card">
+                <div class="med-card">
+                    Why we fit for you: <br>
+                    Easy Money Transaction <br>
+                    Special Services & Product <br>
+                    Private Equity Shareholders <br>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-img">
+                        <object data="{{ url("static/image/profile.svg") }}" type=""></object>
+                    </div>
+                    <div class="profile-name">
+                        Salma Fauziyah
+                        <div class="position">
+                            Project Manager
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="stars">
+                            <object data="{{ url('static/image/stars.svg') }}" type=""></object>
+                        </div>
+                        <div class="sub-review">
+                            <div id="star-review">5/5</div>
+                            <div id="total-projects">208 Projects</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 @endsection
