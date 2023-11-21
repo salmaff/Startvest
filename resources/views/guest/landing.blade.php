@@ -21,7 +21,7 @@
         <div class="caption-cards">
             <div class="big-card">
                 <div id="drone-img">
-                    <object data="{{ url('/static/image/drone.svg') }}" type=""></object>
+                    <object data="{{ url('/static/image/rizfi/drone.svg') }}" type=""></object>
                 </div>
                 <div class="card-desc">
                     <div class="card-title">
@@ -54,7 +54,7 @@
                 </div>
                 <div class="profile-card">
                     <div class="profile-img">
-                        <object data="{{ url("static/image/profile.svg") }}" type=""></object>
+                        <object data="{{ url("static/image/rizfi/profile.svg") }}" type=""></object>
                     </div>
                     <div class="profile-name">
                         Salma Fauziyah
@@ -64,7 +64,7 @@
                     </div>
                     <div class="review">
                         <div class="stars">
-                            <object data="{{ url('static/image/stars.svg') }}" type=""></object>
+                            <object data="{{ url('static/image/rizfi/stars.svg') }}" type=""></object>
                         </div>
                         <div class="sub-review">
                             <div id="star-review">5/5</div>
@@ -74,6 +74,39 @@
 
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="steps-container">
+        <div class="steps-title">
+            Hanya butuh 3 langkah untuk <br>
+            menjalankan ide cemerlang Anda!
+        </div>
+        <div class="steps">
+            @php
+                $json = '{
+                    "Sign Up" : "Daftarkan akun Anda dan mulailah mendanai project",
+                    "Buka Project" : "Pilih beberapa ide project dan mulailah mendanai",
+                    "Jalankan" : "Saatnya buat mimpi Andamenjadi nyata."
+                }';
+
+                $steps = json_decode($json);
+            @endphp
+            @foreach ($steps as $key => $step)
+                <div class="step">
+                    <div class="step-no">
+                        <object data="{{ url("/static/image/rizfi/steps/step_". $loop->index + 1 . "/no.svg") }}"></object>
+                    </div>
+                    <div class="step-img">
+                        <object data="{{ url("/static/image/rizfi/steps/step_". $loop->index + 1 . "/step.svg") }}"></object>
+                    </div>
+                    <div class="step-title">
+                        {{ $key }}
+                    </div>
+                    <div class="step-desc">
+                        {{ $step }}
+                    </div>
+                </div>
+            @endforeach
         </div>
     </div>
 @endsection

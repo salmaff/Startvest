@@ -21,7 +21,7 @@
             <div class="nav-container">
                 <div class="link-container">
                     <div class="logo">
-                        <object data="{{ url('/static/image/logo.svg') }}" type=""></object>
+                        <object data="{{ url('/static/image/rizfi/logo.svg') }}" type=""></object>
                     </div>
                     <ul class="links">
                         <li>Home</li>
@@ -61,7 +61,7 @@
                     <div class="profile">
                         <div class="name-profile">
                             <div class="logo">
-                                <object data="{{ url('/static/image/logo.svg') }}" type=""></object>
+                                <object data="{{ url('/static/image/rizfi/logo.svg') }}" type=""></object>
                             </div>
                             <div class="name">
                                 StartVest
