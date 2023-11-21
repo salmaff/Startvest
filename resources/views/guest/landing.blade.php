@@ -109,4 +109,18 @@
             @endforeach
         </div>
     </div>
+    <div class="projects-container">
+        <div class="projects-nav">
+            <div class="projects-title">
+                Project baru yang bisa <br>
+                Anda kerjakan
+            </div>
+            <div class="all-projects">
+                Lihat semua
+            </div>
+        </div>
+        <div class="projects">
+            <object data="{{ url("/static/image/rizfi/projects.svg") }}" type=""></object>
+        </div>
+    </div>
 @endsection

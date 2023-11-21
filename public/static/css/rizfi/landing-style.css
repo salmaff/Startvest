@@ -239,3 +239,39 @@
     font-weight: 300;
     line-height: normal;
 }
+
+.projects-container {
+    margin-top: 170px;
+    margin-bottom: 500px;
+}
+
+.projects-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.projects-nav div {
+    color: #222;
+}
+
+.projects-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.all-projects {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
