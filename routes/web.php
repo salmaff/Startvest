@@ -16,3 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('guest.landing');
 });
+
+Route::prefix('dashboard')->group(function () {
+    Route::name('dashboard.')->group(function () {
+
+        // Dashboard Route
+
+        Route::view('', 'dashboard.main')->name('main');
+        Route::view('/invest', 'dashboard.saldo')->name('saldo');
+
+
+
+    });
+});
