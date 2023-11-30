@@ -20,11 +20,11 @@ Route::get('/', function () {
 Route::prefix('dashboard')->group(function () {
     Route::name('dashboard.')->group(function () {
 
-        // Dashboard Route
+        // --- Dashboard Route --- //
 
         Route::view('', 'dashboard.main')->name('main');
         Route::view('/invest', 'dashboard.saldo')->name('saldo');
-
+        Route::view('/notifikasi/keuangan', 'dashboard.notif.keuangan')->name('notif.keuangan');
 
 
     });
