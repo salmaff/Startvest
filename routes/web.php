@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::view('/signup', 'guest.signup');
+Route::view('/signin', 'guest.signin');
