@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .caption-container {
     margin: 105px 150px;
     display: flex;
