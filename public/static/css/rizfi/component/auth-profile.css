@@ -7,8 +7,58 @@
     border-radius: 20px;
     box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
     padding: 5px;
+    position: relative;
 }
 
 .auth-content > div {
     margin: 0 2px;
+}
+
+#notification {
+    margin-top: 10px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+    right: 100px;
+    z-index: 5;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
+    display: none;
+
+    /* top: 60px; */
+    opacity: 0;
+}
+
+#notification.active {
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.notif-header {
+    color: #fa852e;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    padding-left: 10px;
+}
+
+.notif-modal {
+    border-top: 2px solid #e9e9e9;
+    padding: 5px 10px;
+}
+
+.notif-title {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.notif-desc {
+    color: #969696;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
 }
