@@ -120,7 +120,18 @@
             </div>
         </div>
         <div class="projects">
-            <object data="{{ url("/static/image/rizfi/projects.svg") }}" type=""></object>
+            @php
+                $rows = [0, 1];
+                $cols = [0, 1, 2];
+            @endphp
+            {{-- <object data="{{ url("/static/image/rizfi/projects.svg") }}" type=""></object> --}}
+            @foreach ($rows as $row)
+                <div class="projects-row">
+                    @foreach ($cols as $col)
+                        <x-productCard />
+                    @endforeach
+                </div>
+            @endforeach
         </div>
     </div>
 @endsection

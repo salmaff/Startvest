@@ -30,12 +30,16 @@
                     </ul>
                 </div>
                 <div class="button-container">
-                    <div id="user-signup">
-                        Daftar
-                    </div>
-                    <div id="my-account">
-                        Akun Saya
-                    </div>
+                    <a href="/signup">
+                        <div id="user-signup">
+                            Daftar
+                        </div>
+                    </a>
+                    <a href="/signin">
+                        <div id="my-account">
+                            Akun Saya
+                        </div>
+                    </a>
                 </div>
             </div>
         </nav>
