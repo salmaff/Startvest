@@ -21,6 +21,11 @@
               <a href="">Investasi Saya</a>
               <a href="">Riwayat Return</a>
               <a href="">Profil</a>
+              <div class="sub-menu">
+                    <a href="">Edit Profil</a>
+                    <a href="">Ubah Password</a>
+                    <a href="">Bank & Kartu</a>
+              </div>
               <a href="">Notifikasi</a>
               <div class="sub-menu">
                     <a href="">Keuangan</a>
