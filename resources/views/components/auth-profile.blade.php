@@ -1,6 +1,25 @@
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 <link rel="stylesheet" href="{{ url('static/css/rizfi/component/auth-profile.css') }}">
 
+<div id="overlay"></div>
+
+<style>
+    #overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
+        z-index: 4;
+    }
+
+    #overlay.active{
+        display: block
+    }
+
+</style>
 
 <div class="auth-profile">
     <div class="auth-content">
@@ -44,8 +63,10 @@
 <script>
     const notifBtn = document.querySelector('#bell-icon')
     const notif = document.querySelector('#notification')
+    const overlay = document.querySelector('#overlay')
     notifBtn.addEventListener('click', (e) => {
         console.log(e);
         notif.classList.toggle('active')
+        overlay.classList.toggle('active')
     })
 </script>
