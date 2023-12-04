@@ -30,16 +30,20 @@
                     </ul>
                 </div>
                 <div class="button-container">
-                    <a href="/signup">
-                        <div id="user-signup">
-                            Daftar
-                        </div>
-                    </a>
-                    <a href="/signin">
-                        <div id="my-account">
-                            Akun Saya
-                        </div>
-                    </a>
+                    @if (Request::segment(1) === 'auth')
+                        <x-auth-profile />
+                    @else
+                        <a href="/signup">
+                            <div id="user-signup">
+                                Daftar
+                            </div>
+                        </a>
+                        <a href="/signin">
+                            <div id="my-account">
+                                Akun Saya
+                            </div>
+                        </a>
+                    @endif
                 </div>
             </div>
         </nav>

@@ -17,5 +17,9 @@ Route::get('/', function () {
     return view('guest.landing');
 });
 
+Route::prefix('auth')->group(function (){
+    Route::view('', 'guest.landing');
+});
+
 Route::view('/signup', 'guest.signup');
 Route::view('/signin', 'guest.signin');
