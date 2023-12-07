@@ -31,7 +31,7 @@
                         <input name="security" required type="text" placeholder="123">
                     </div>
                 </div>
-                <a href="/signup/photo">
+                <a href="/welcome">
                     <div class="next-button">
                         Lanjutkan
                     </div>

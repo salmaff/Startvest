@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.caption > * {
+    color: black;
+}
+
+.caption > h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.sub-caption {
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.start-btn {
+    color: white;
+    cursor: pointer;
+    margin-top: 40px;
+    width: 400px;
+    border-radius: 34px;
+    padding: 10px 20px;
+    background: #ff872e;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+}
