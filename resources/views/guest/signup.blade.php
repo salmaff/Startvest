@@ -42,9 +42,11 @@
                     </div>
                 </div>
             </div>
-            <div class="next-button">
-                Lanjutkan
-            </div>
+            <a href="/signup/photo">
+                <div class="next-button">
+                    Lanjutkan
+                </div>
+            </a>
             <div class="login-caption">
                 Sudah punya akun? <a href="/signin">Sign In</a>
             </div>

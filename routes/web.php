@@ -22,4 +22,6 @@ Route::prefix('auth')->group(function (){
 });
 
 Route::view('/signup', 'guest.signup');
+Route::view('/signup/photo', 'guest.photo');
+Route::view('/add_credit', 'guest.add_credit');
 Route::view('/signin', 'guest.signin');

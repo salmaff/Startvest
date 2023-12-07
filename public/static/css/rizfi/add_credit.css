@@ -1,0 +1,78 @@
+body {
+    background: #3b41e3;
+}
+
+.main-container {
+    display: flex;
+    width: 100vw;
+}
+
+.image-container {
+    background: #3b41e3;
+    width: 50%;
+    height: 100vh;
+    background: url("../../image/rizfi/credit-cards.png");
+    background-size: cover;
+}
+
+.inputs-container {
+    margin: auto;
+    margin-top: 100px;
+}
+
+.input-container {
+    margin-top: 40px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+}
+
+.input label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.input input {
+    width: 400px;
+    padding: 10px 20px;
+    border-radius: 34px;
+    border-style: none;
+    margin-top: 5px;
+    color: #222;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline-offset: 0;
+}
+
+.input input:focus {
+    border: 1px solid #8286ff;
+    background: #4c52f8;
+    color: #fff;
+    border-style: none;
+    outline: none;
+    outline-offset: 0;
+}
+
+.input input::placeholder {
+    color: #bfbfbf;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.next-button {
+    cursor: pointer;
+    margin-top: 40px;
+    width: 400px;
+    border-radius: 34px;
+    padding: 10px 20px;
+    background: #ff872e;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
