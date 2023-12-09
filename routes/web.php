@@ -23,7 +23,7 @@ Route::prefix('dashboard')->group(function () {
         // --- Dashboard Route --- //
 
         Route::view('', 'dashboard.main')->name('main');
-        Route::view('/invest', 'dashboard.saldo')->name('saldo');
+        Route::view('/invest/saldo', 'dashboard.invest.saldo')->name('invest.saldo');
         Route::view('/notifikasi/keuangan', 'dashboard.notif.keuangan')->name('notif.keuangan');
         Route::view('/notifikasi/akun', 'dashboard.notif.akun')->name('notif.akun');
         Route::view('/notifikasi/rincianNotif', 'dashboard.notif.rinciannotif')->name('notif.rinciannotif');
