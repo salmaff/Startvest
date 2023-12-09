@@ -36,50 +36,42 @@
                     <p>Rp 625.872.541,00</p>
                 </div>
             </div>
-            <h1>Keuntungan</h1>
-            <h5>Periksa keuntungan yang kamu dapat dari perusahaan</h5>
-            <div class="search-button">
-                <input type="text" placeholder="Search...">
-                <button type="button">Search</button>
-            </div>
-            <div class="sub-statistic">
-
-                <div class="isi-konten">
-                    <div class="border-container">
-                        <div class="gambar-konten">
-                            <img src="{{ asset('static/image/cak/logo/logo-hire.png') }}" alt="">
+            <div class="keuntungan">
+                <h1>Keuntungan</h1>
+                <div class="sub-judul">
+                    <h5>Periksa keuntungan yang kamu dapat dari perusahaan</h5>
+                    <form action="">
+                        <div class="search-button">
+                            <input type="search" placeholder="Search...">
+                            <button type="submit">
+                                <img src="{{ asset('static/image/cak/icon/search.svg') }}" alt="">
+                            </button>
                         </div>
-                        <div class="tulisan-konten">
-                            <h4>H!re</h4>
-                            <p>Temukan pekerjaan impianmu dengan mudah dengan H1ire </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="isi-konten">
-                    <div class="border-container">
-                        <div class="gambar-konten">
-                            <img src="{{ asset('static/image/cak/logo/logo-hire.png') }}" alt="">
-                        </div>
-                        <div class="tulisan-konten">
-                            <h4>H!re</h4>
-                            <p>Temukan pekerjaan impianmu dengan mudah dengan H1ire </p>
-                        </div>
-                    </div>
-                </div>
-                                <div class="isi-konten">
-                    <div class="border-container">
-                        <div class="gambar-konten">
-                            <img src="{{ asset('static/image/cak/logo/logo-hire.png') }}" alt="">
-                        </div>
-                        <div class="tulisan-konten">
-                            <h4>H!re</h4>
-                            <p>Temukan pekerjaan impianmu dengan mudah dengan H1ire </p>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
-
-                
+            <div class="list-wrapper">
+                <div class="list-item">
+                    <img src="{{ asset('static/image/cak/logo/logo-hire.png') }}" alt="">
+                    <div class="tulisan-konten">
+                        <h4>H!re</h4>
+                        <p>Temukan pekerjaan impianmu dengan mudah dengan H!ire</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <img src="{{ asset('static/image/cak/logo/logo-fire.png') }}" alt="">
+                    <div class="tulisan-konten">
+                        <h4>f!re</h4>
+                        <p>Sudahi pekerjaanmu dengan cara yang menakjubkan</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <img src="{{ asset('static/image/cak/logo/logo-skola.png') }}" alt="">
+                    <div class="tulisan-konten">
+                        <h4>Skola</h4>
+                        <p>Belajar dimanapun dan kapanpun dengan yang lain</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
