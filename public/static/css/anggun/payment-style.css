@@ -24,12 +24,13 @@
 }
 
 .nominal-container {
-    width: 100%;
     height: 460px;
     padding: 90px 280px;
     background: #FF872E; 
     box-shadow: 0px 4px 12px rgba(0, 200, 156, 0.30); 
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
     align-items: center;
 }
 
@@ -42,23 +43,21 @@
 }
 
 .option {
-    width: 273px; 
-    height: 94px; 
-    padding-left: 50px; 
-    padding-right: 50px; 
+    width: 275px; 
+    height: 95px; 
+    align-items: center;
     border-radius: 8px; 
     overflow: hidden; 
     border: 1px #00725E solid; 
     justify-content: center; 
     align-items: center; 
-    display: inline-flex
+    display: inline-flex;
 }
 
 .other-opt {
-    width: 573px; 
+    width: 575px; 
     height: 95px; 
-    padding-left: 50px; 
-    padding-right: 50px; 
+    align-items: center;
     border-radius: 8px; 
     overflow: hidden; 
     border: 1px #00725E solid; 
@@ -68,28 +67,34 @@
 }
 
 .amount {
-    color: rgba(0, 0, 0, 0.70); 
     font-size: 20px; 
     font-family: Work Sans; 
     font-weight: 500; 
     line-height: 24px; 
+    color: rgba(0, 0, 0, 0.70); 
 }
 
-.fund {
+.option:hover,
+.other-opt:hover,
+.option:hover .amount,
+.other-opt:hover .amount {
+    color:white;
+    background: #3B41E3;
+}
+
+.fund-act {
     cursor: pointer;
     margin-top: 40px;
     width: 225px; 
     height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 34px; 
     background: #3B41E3; 
-    border-radius: 34px;
     color: white;
     font-size: 20px;
     font-family: Poppins;
     font-weight: 600;
     font-style: normal;
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

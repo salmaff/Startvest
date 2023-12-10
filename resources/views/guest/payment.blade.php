@@ -35,7 +35,7 @@
                 <div class="amount">Other amount</div>
             </div>
         </div>
-        <div class="fund">
+        <div class="fund-act">
             Fund
         </div>
     </div>
