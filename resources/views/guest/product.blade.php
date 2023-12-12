@@ -38,7 +38,8 @@
         </div>
     </div>
 
-    <div class="projects">
+    <div class="projects-container">
+        
     </div>
 </div>
 @endsection

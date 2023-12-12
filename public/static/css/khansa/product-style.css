@@ -6,7 +6,6 @@
 .banner {
     width: 1438px;
     height: 900px; 
-    /* aman */
 }
 
 .category-container {
@@ -14,23 +13,21 @@
     justify-content: center;
     align-self: center;
     flex-direction: column;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 50px;
     width: 1326px;
     border: 1px solid #BFBFBF; /* sek ini blom tak cek */
     border-radius: 20px;
-    padding: ;
 }
 
 .category-nav{
     display: flex;
     justify-content:space-between;
     align-self: center;
-    align-item: center;
-    width: 90%;
+    align-items: center;
+    width: 95%;
     margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 50px;
 }
 
 .category-desc {
@@ -38,7 +35,9 @@
     font-weight: 700;
     color: black;
     line-height: normal;
-
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
 }
 
 .all-category {
@@ -52,15 +51,126 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .item-category{
     width: 250px;
-    height: 250px;
     align-items: center;
+    text-align: center;
+    border: 1px solid #BFBFBF;
+    border-radius: 10px;
+    margin: 45px;
+    padding:22px 50px;
 }
 
 .item-category div{
     color: black;
+}
+
+.projects-container {
+    margin-bottom: 200px;
+}
+
+.projects-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.projects-nav div {
+    color: #222;
+}
+
+.projects-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.all-projects {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.projects-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    margin-top: 65px;
+    width: 65%;
+}
+
+.card {
+    background-color: white;
+    width: 370px;
+    height: 420px;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#drone-img {
+    padding: 18px 18px 0px 18px;
+}
+
+.card-desc {
+    margin: 10px 20px;
+}
+
+.card-title {
+    color: #222;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card-subtitle {
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.bar-container {
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 54px;
+    background: #e9e9e9;
+}
+
+.bar {
+    width: 70%;
+    height: 10px;
+    background-color: #3498db;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.progress-detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+#percentage {
+    color: #222;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#amount {
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
 }

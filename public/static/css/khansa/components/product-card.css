@@ -1,0 +1,62 @@
+.card {
+    background-color: white;
+    width: 370px;
+    height: 420px;
+    border-radius: 4px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#drone-img {
+    padding: 18px 18px 0px 18px;
+}
+
+.card-desc {
+    margin: 10px 20px;
+}
+
+.card-title {
+    color: #222;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card-subtitle {
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.bar-container {
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 54px;
+    background: #e9e9e9;
+}
+
+.bar {
+    width: 70%;
+    height: 10px;
+    background-color: #3498db;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.progress-detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+#percentage {
+    color: #222;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#amount {
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+}
