@@ -26,7 +26,7 @@ Route::prefix('dashboard')->group(function () {
         Route::view('/saldo', 'dashboard.saldo')->name('saldo');
         Route::view('/invest/detail', 'dashboard.invest.detail')->name('invest.detail');
         Route::view('/invest/saldo', 'dashboard.invest.saldo')->name('invest.saldo');
-        Route::view('/riwayat', 'dashboard.riwayat')->name('profile.riwayat');
+        Route::view('/riwayat', 'dashboard.riwayat')->name('riwayat');
 
 
         // --- Profile --- //
