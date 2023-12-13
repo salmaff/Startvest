@@ -78,9 +78,27 @@
                         <a href="{{ route('dashboard.riwayat') }}">Riwayat Return</a>
                         <a id="active" href="{{ route('dashboard.profile.edit') }}">Profil</a>
                         <div class="sub-menu">
-                              <a href="{{ route('dashboard.profile.edit') }}">Edit Profil</a>
-                              <a href="{{ route('dashboard.profile.password') }}">Ubah Password</a>
-                              <a href="{{ route('dashboard.profile.bank') }}">Bank & Kartu</a>
+                            @switch($segments[2])
+                                @case('edit')
+                                    <a id="sub-active" href="{{ route('dashboard.profile.edit') }}">Edit Profil</a>
+                                    <a href="{{ route('dashboard.profile.password') }}">Ubah Password</a>
+                                    <a href="{{ route('dashboard.profile.bank') }}">Bank & Kartu</a>
+
+                                @break
+                                @case('password')
+                                    <a href="{{ route('dashboard.profile.edit') }}">Edit Profil</a>
+                                    <a id="sub-active" href="{{ route('dashboard.profile.password') }}">Ubah Password</a>
+                                    <a href="{{ route('dashboard.profile.bank') }}">Bank & Kartu</a>
+
+                                @break
+                                @case('bank')
+                                    <a href="{{ route('dashboard.profile.edit') }}">Edit Profil</a>
+                                    <a href="{{ route('dashboard.profile.password') }}">Ubah Password</a>
+                                    <a id="sub-active" href="{{ route('dashboard.profile.bank') }}">Bank & Kartu</a>
+                                    @break
+                                @default
+
+                            @endswitch
                         </div>
                         <a href="{{ route('dashboard.notif.keuangan') }}">Notifikasi</a>
                         <div class="sub-menu">
@@ -100,8 +118,17 @@
                         </div>
                         <a id="active" href="{{ route('dashboard.notif.keuangan') }}">Notifikasi</a>
                         <div class="sub-menu">
-                              <a href="{{ route('dashboard.notif.keuangan') }}">Keuangan</a>
-                              <a href="{{ route('dashboard.notif.akun') }}">Akun</a>
+                            @switch($segments[2])
+                                @case('keuangan')
+                                    <a id="sub-active" href="{{ route('dashboard.notif.keuangan') }}">Keuangan</a>
+                                    <a href="{{ route('dashboard.notif.akun') }}">Akun</a>
+                                @break
+                                @case('akun')
+                                    <a href="{{ route('dashboard.notif.keuangan') }}">Keuangan</a>
+                                    <a id="sub-active" href="{{ route('dashboard.notif.akun') }}">Akun</a>
+                                    @break
+                                @default
+                            @endswitch
                         </div>
                         @break
                     @default

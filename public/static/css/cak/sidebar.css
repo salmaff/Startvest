@@ -38,6 +38,7 @@
     background: linear-gradient(to right, var(--color-white), #1abc9c32);
     border-right: 4px solid var(--color-green);
 }
+
 .main-menu > a:not(:last-child) {
     color: #969696;
 }
@@ -67,6 +68,10 @@
     color: #969696;
     display: flex;
     padding: 0.3rem 0 0.3rem 1.5rem;
+}
+
+#sub-active {
+    color: var(--color-green);
 }
 
 .sub-menu > a:hover {
