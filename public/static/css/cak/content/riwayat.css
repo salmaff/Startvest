@@ -1,4 +1,7 @@
 /* ============================ HEADING ============================*/
+* {
+    z-index: 0;
+}
 
 .heading {
     display: flex;
@@ -50,10 +53,11 @@
     gap: 1rem;
     padding: 1rem 1.4rem;
     margin-bottom: 1rem;
-    position: absolute;
+    /* position: absolute; */
 }
 
 #filter-card {
+    display: none;
     width: 400px;
     border-radius: 2px 8px 8px 8px;
     background: #fff;
@@ -63,9 +67,9 @@
     align-items: start;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 
-    position: relative;
-    top: 70px;
-    z-index: 5;
+    position: absolute;
+    top: 250px;
+    z-index: 10;
 }
 
 .filter-name {
