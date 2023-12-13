@@ -16,7 +16,7 @@
             <h1>Dashboard</h1>
             <h5>Lihat hasil yang telah kamu raih hari ini! 📈💰 #KinerjaHariIni</h5>
         </div>
-        <a href="" class="profile">
+        <a href="{{ route('dashboard.profile.edit') }}" class="profile">
             <img src="{{ asset('static/image/cak/pfp.png') }}" alt="">
             <div class="profile-text">
                 <h4>Cakra</h4>
@@ -51,21 +51,21 @@
             <h5>Transaksi Terakhir</h5>
             <div class="recent-lists">
                 <a href="">
-                    <img src="" alt="">
+                    <img src="{{ asset('static/image/cak/robotic_hand_img.png') }}" alt="">
                     <h6>Robotic Hand</h6>
                     <h6>Salma Fauziyah</h6>
                     <h6>12 Januari 2020</h6>
                     <img src="{{ asset('static/image/cak/icon/more.svg') }}" alt="">
                 </a>
                 <a href="">
-                    <img src="" alt="">
+                    <img src="{{ asset('static/image/cak/lebrone_img.png') }}" alt="">
                     <h6>LeBrone X</h6>
                     <h6>Masayoshi</h6>
                     <h6>11 Januari 2020</h6>
                     <img src="{{ asset('static/image/cak/icon/more.svg') }}" alt="">
                 </a>
                 <a href="">
-                    <img src="" alt="">
+                    <img src="{{ asset('static/image/cak/soffa_img.png') }}" alt="">
                     <h6>Soffa Lembutte</h6>
                     <h6>Shayna</h6>
                     <h6>11 Januari 2020</h6>

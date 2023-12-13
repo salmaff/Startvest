@@ -17,14 +17,19 @@
         <nav class="sidebar">
             <img src="{{ asset('static/image/rizfi/logo.svg') }}" alt="" />
             <div class="main-menu">
-              <a href="">Dashboard</a>
-              <a href="">Investasi Saya</a>
-              <a href="">Riwayat Return</a>
-              <a href="">Profil</a>
-              <a href="">Notifikasi</a>
+              <a href="{{ route('dashboard.main') }}">Dashboard</a>
+              <a href="{{ route('dashboard.invest.detail') }}">Investasi Saya</a>
+              <a href="{{ route('dashboard.profile.riwayat') }}">Riwayat Return</a>
+              <a href="{{ route('dashboard.profile.edit') }}">Profil</a>
               <div class="sub-menu">
-                    <a href="">Keuangan</a>
-                    <a href="">Akun</a>
+                    <a href="{{ route('dashboard.profile.edit') }}">Edit Profil</a>
+                    <a href="{{ route('dashboard.profile.password') }}">Ubah Password</a>
+                    <a href="{{ route('dashboard.profile.bank') }}">Bank & Kartu</a>
+              </div>
+              <a href="{{ route('dashboard.notif.keuangan') }}">Notifikasi</a>
+              <div class="sub-menu">
+                    <a href="{{ route('dashboard.notif.keuangan') }}">Keuangan</a>
+                    <a href="{{ route('dashboard.notif.akun') }}">Akun</a>
               </div>
               <a href="" class="sign-out">Sign Out</a>
             </div>

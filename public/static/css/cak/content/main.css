@@ -89,6 +89,7 @@ hr {
 .recent {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 .recent-lists {
@@ -98,11 +99,13 @@ hr {
 }
 
 .recent-lists a {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 0.2fr repeat(3, 1fr) 0.2fr;
+    gap: 1rem;
     align-items: center;
     background-color: var(--color-white);
-    border-radius: 15px;
+    border-radius: 10px;
+    padding: 1rem;
 }
 
 .recent-lists a > * {

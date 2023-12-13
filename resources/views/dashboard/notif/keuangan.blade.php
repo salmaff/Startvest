@@ -28,7 +28,7 @@
                 <p>Pembayaran investasi 745774577457 berhasil dilakukan. Cek rinciannya di sini.</p>
                 <p>29 Aug 2023 19:00</p>
             </div>
-            <a class="btn-secondary">Tampilkan Rincian</a>
+            <a href="{{ route('dashboard.notif.rinciannotif') }}" class="btn-secondary">Tampilkan Rincian</a>
         </div>
         <div class="wrapper">
             <img src="{{ asset('static/image/cak/logo/logo-fire.png') }}" alt="">
@@ -37,7 +37,7 @@
                 <p>Pembayaran investasi 745774577457 berhasil dilakukan. Cek rinciannya di sini.</p>
                 <p>29 Aug 2023 19:00</p>
             </div>
-            <a class="btn-secondary">Tampilkan Rincian</a>
+            <a href="{{ route('dashboard.notif.rinciannotif') }}" class="btn-secondary">Tampilkan Rincian</a>
         </div>
         <div class="wrapper">
             <img src="{{ asset('static/image/cak/logo/logo-skola.png') }}" alt="">
@@ -46,7 +46,7 @@
                 <p>Pembayaran investasi 745774577457 berhasil dilakukan. Cek rinciannya di sini.</p>
                 <p>29 Aug 2023 19:00</p>
             </div>
-            <a class="btn-secondary">Tampilkan Rincian</a>
+            <a href="{{ route('dashboard.notif.rinciannotif') }}" class="btn-secondary">Tampilkan Rincian</a>
         </div>
     </div>
 
