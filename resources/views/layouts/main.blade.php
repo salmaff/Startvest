@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="{{ url('/static/css/rizfi/navbar-style.css') }}">
     <link rel="stylesheet" href="{{ url('/static/css/rizfi/footer-style.css') }}">
     <link rel="stylesheet" href="{{ url('/static/css/rizfi/env.css') }}">
-
+    <title>
+        @yield('title') | Startvest
+    </title>
 </head>
 <body>
     @section('navbar')
