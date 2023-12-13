@@ -1,0 +1,110 @@
+.det-card {
+    width: 100%;
+    max-width: 1036px;
+    height: 610px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #1ABC9C;
+    padding: 25px 35px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 75px auto;
+}
+
+.dtc {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.det-title {
+    text-align: left; 
+    color: #0C0D36; 
+    font-size: 30px; 
+    font-family: Poppins; 
+    font-weight: 500; 
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.det-subtitle {
+    text-align: left; 
+    color: #0C0D36; 
+    font-size: 25px; 
+    font-family: Poppins; 
+    font-weight: 400;
+    margin-top: 7px;
+    margin-bottom: 6px;
+}
+
+.det-sub2title { 
+    color: #0C0D36; 
+    font-size: 20px; 
+    font-family: Roboto; 
+    font-weight: 300;
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+
+.center-card {
+    margin-top: 45px;
+    margin-bottom: 44px;
+    width: 768px;
+    height: 362px;
+    background: #BFBFBF; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 10px;
+    padding: 35px 45px;
+    align-self: center;
+}
+
+.acctype {
+    margin: 5px 0px;
+    color: black; 
+    font-size: 20px; 
+    font-family: Poppins; 
+    font-weight: 300;
+}
+
+.accnum {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: black; 
+    font-size: 20px; 
+    font-family: Poppins; 
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.tot {
+    margin: 5px 0px;
+    color: black; 
+    font-size: 20px; 
+    font-family: Poppins; 
+    font-weight: 300;
+}
+
+.totnum {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 20px; 
+    font-family: Poppins; 
+    font-weight: 700;
+}
+
+.accnumtxt {
+    color: black; 
+}
+
+.totnumtxt {
+    color: black; 
+}
+
+.accnum i, 
+.totnum i {
+    font-size: 23px;
+    color: black;
+}

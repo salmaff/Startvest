@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use PHPUnit\TextUI\XmlConfiguration\Group;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
+Route::prefix('payment')->group(function (){
+    Route::view('/', 'guest.payment');
+    Route::view('/detail', 'guest.payment-detail');
+    Route::view('/method', 'guest.payment-method');
+    Route::view('/success', 'guest.payment-success');
+});
+
+Route::prefix('project')->group(function(){
+    Route::View('/', 'guest.project-detail');
+});
 
 Route::get('/', function () {
     return view('guest.landing');

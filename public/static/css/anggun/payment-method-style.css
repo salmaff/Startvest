@@ -1,0 +1,141 @@
+.meth-card {
+    width: 100%;
+    max-width: 943px;
+    height: 570px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: white;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    margin: 75px auto;
+}
+
+.meth-left-img {
+    width: 333px;
+    height: 570px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.meth-left-img img {
+    object-fit: cover;
+    width: 333px;
+    height: 570px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.meth-container {
+    width: 610px;
+    height: 570px;
+    padding: 40px;
+}
+
+.meth-title {
+    color: #353336;
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 700;
+}
+
+.meth-opt {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+  
+.radio-label {
+    margin-top: 10px;
+    cursor: pointer;
+}
+  
+.meth-card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.vadesc {
+    color: #1E1E1E;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.meth-bank-opt {
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(61px, 1fr));
+    gap: 10px;
+}
+
+.meth-bank-opt object {
+    width: 61px;
+    height: 41.83px;
+    margin: 10px 15px;
+}
+
+.first-opt {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="radio"].myCard, 
+input[type="radio"].virtualAccount {
+    transform: scale(2);
+    margin-right: 15px;
+}
+
+.radio-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="radio"]:checked + .radio-label + .bank-options {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Poppins;
+    color: #1E1E1E;
+}
+
+.va-txt {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Poppins;
+    color: #1E1E1E;
+}
+
+i {
+    font-size: 20px;
+    color: #1E1E1E;
+}
+
+.rotate-down {
+    transform: rotate(180deg);
+}
+
+.meth-bank-opt {
+    display: none;
+}
+  
+.meth-finpay {
+    cursor: pointer;
+    padding: 14px 34px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 34px;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 600;
+    margin-left: 400px;
+}
+  
