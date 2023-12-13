@@ -1,11 +1,20 @@
+body {
+    overflow-x: hidden;
+}
 
 .main-container {
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner {
-    width: 1438px;
-    height: 900px; 
+    height: 900px;
+    background-image: url("../../image/khansa/Banner.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
 }
 
 .category-container {
@@ -14,14 +23,14 @@
     align-self: center;
     flex-direction: column;
     margin: 50px;
-    width: 1326px;
-    border: 1px solid #BFBFBF; /* sek ini blom tak cek */
+    width: 70%;
+    border: 1px solid #bfbfbf; /* sek ini blom tak cek */
     border-radius: 20px;
 }
 
-.category-nav{
+.category-nav {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-self: center;
     align-items: center;
     width: 95%;
@@ -47,23 +56,23 @@
     line-height: normal;
 }
 
-.item-container{
+.item-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.item-category{
+.item-category {
     width: 250px;
     align-items: center;
     text-align: center;
-    border: 1px solid #BFBFBF;
+    border: 1px solid #bfbfbf;
     border-radius: 10px;
     margin: 45px;
-    padding:22px 50px;
+    padding: 22px 50px;
 }
 
-.item-category div{
+.item-category div {
     color: black;
 }
 
