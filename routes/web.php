@@ -23,7 +23,8 @@ Route::prefix('payment')->group(function (){
 });
 
 Route::prefix('project')->group(function(){
-    Route::View('/', 'guest.project-detail');
+    Route::view('/', 'guest.landing_product');
+    Route::View('/detail', 'guest.project-detail');
 });
 
 Route::get('/', function () {
