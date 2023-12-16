@@ -35,8 +35,10 @@
                 <div class="amount">Other amount</div>
             </div>
         </div>
-        <div class="fund-act">
-            Fund
-        </div>
+        <a href="/payment/method">
+            <div class="fund-act">
+                Fund
+            </div>
+        </a>
     </div>
 @endsection

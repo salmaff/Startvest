@@ -31,6 +31,7 @@ Route::get('/', function () {
     return view('guest.landing');
 });
 
+
 Route::prefix('auth')->group(function (){
     Route::view('', 'guest.landing');
 });
@@ -47,7 +48,7 @@ Route::prefix('dashboard')->group(function () {
         // --- Dashboard Route --- //
 
         Route::view('', 'dashboard.main')->name('main');
-        Route::view('/saldo', 'dashboard.saldo')->name('saldo');
+        // Route::view('/saldo', 'dashboard.saldo')->name('saldo');
         Route::view('/invest/detail', 'dashboard.invest.detail')->name('invest.detail');
         Route::view('/invest/saldo', 'dashboard.invest.saldo')->name('invest.saldo');
         Route::view('/riwayat', 'dashboard.riwayat')->name('riwayat');

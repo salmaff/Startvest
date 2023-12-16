@@ -4,7 +4,7 @@
 @extends('layouts.main')
 
 @section('main-content')
-    <div class="detail-card">
+    <div class="det-card">
         <div class="dtc">
             <div class="det-title">
                 Detail Pemesanan

@@ -22,7 +22,7 @@
                         <img src="{{ url("static\image\anggun\Wireboard Detail 4.png") }}" />
                     </swiper-slide>
                 </swiper-container>
-        
+
                 <swiper-container class="mySwiper2" loop="true" space-between="10" slides-per-view="4" free-mode="true" watch-slides-progress="true">
                     <swiper-slide>
                         <img src="{{ url("static\image\anggun\Wireboard Detail 1.png") }}" />
@@ -84,7 +84,7 @@
                 What will you get:
             </div>
             <div class="benefit">
-                <img src="static/image/anggun/Checklist.png" />
+                <img src="{{ url("static/image/anggun/Checklist.png") }}" />
                 <div class="ben-text">
                     Equity of the startup directly from the founder
                 </div>
@@ -101,11 +101,12 @@
                     You can also sell your equity once the startup going IPO
                 </div>
             </div>
-            <div class="fund-project">
-                Fund Now
-            </div>
+            <a href="/payment">
+                <div class="fund-project">
+                    Fund Now
+                </div>
+            </a>
         </div>
     </div>
-    
+
 @endsection
-    

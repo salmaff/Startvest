@@ -1,61 +1,60 @@
-@extends('layouts.dashboard-base')
+@extends('layouts.dashboard-base') @section('css')
+<link
+    rel="stylesheet"
+    href="{{ asset('static/css/cak/content/invest/detail.css') }}"
+/>
+@endsection @section('title') Dashboard @endsection @section('main-content')
 
-@section('css')
-    <link rel="stylesheet" href="{{ asset('static/css/cak/content/invest/detail.css') }}">
-@endsection
-
-@section('title')
-    Dashboard
-@endsection
-
-@section('main-content')
-
-    {{-- Heading --}}
-    <div class="heading">
-        <div class="headline">
-            <img src="{{ asset('static/image/cak/logo/logo-hire-putih.svg') }}" alt="">
-            <div class="text">
-                <h1>H!re</h1>
-                <h5>Temukan pekerjaan impianmu dengan mudah</h5>
-            </div>
+{{-- Heading --}}
+<div class="heading">
+    <div class="headline">
+        <img
+            src="{{ asset('static/image/cak/logo/logo-hire-putih.svg') }}"
+            alt=""
+        />
+        <div class="text">
+            <h1>H!re</h1>
+            <h5>Temukan pekerjaan impianmu dengan mudah</h5>
         </div>
-        <a href="" class="profile">
-            <img src="{{ asset('static/image/cak/pfp.png') }}" alt="">
-            <div class="profile-text">
-                <h4>Cakra</h4>
-                <h6>UX Designer</h6>
-            </div>
-        </a>
     </div>
+    <a href="" class="profile">
+        <img src="{{ asset('static/image/cak/pfp.png') }}" alt="" />
+        <div class="profile-text">
+            <h4>Cakra</h4>
+            <h6>UX Designer</h6>
+        </div>
+    </a>
+</div>
 
-    {{-- Content --}}
-    <div class="content">
-        <div class="part">
-            <h1>Saldomu</h1>
-            <div class="saldo">
-                <h1>Rp 46.000.000,00</h1>
-                <img src="{{ asset('static/image/cak/saldo.svg') }}" alt="">
-            </div>
+{{-- Content --}}
+<div class="content">
+    <div class="part">
+        <h1>Saldomu</h1>
+        <div class="saldo">
+            <h1>Rp 46.000.000,00</h1>
+            <img src="{{ asset('static/image/cak/saldo.svg') }}" alt="" />
         </div>
-        <div class="part">
-            <h1>Keuntungan</h1>
-            <p>Ini Grafik</p>
+    </div>
+    <div class="part">
+        <h1>Keuntungan</h1>
+        <p>Ini Grafik</p>
+    </div>
+    <div class="part">
+        <div class="month">
+            <h3>Jan</h3>
+            <h3>Feb</h3>
+            <h3>Mar</h3>
+            <h3>Apr</h3>
+            <h3>May</h3>
+            <h3>Jun</h3>
+            <h3>Jul</h3>
+            <h3>Aug</h3>
+            <h3>Sep</h3>
+            <h3>Oct</h3>
+            <h3>Nov</h3>
+            <h3>Dec</h3>
         </div>
-        <div class="part">
-            <div class="month">
-                <h3>Jan</h3>
-                <h3>Feb</h3>
-                <h3>Mar</h3>
-                <h3>Apr</h3>
-                <h3>May</h3>
-                <h3>Jun</h3>
-                <h3>Jul</h3>
-                <h3>Aug</h3>
-                <h3>Sep</h3>
-                <h3>Oct</h3>
-                <h3>Nov</h3>
-                <h3>Dec</h3>
-            </div>
+        <div class="list-container">
             <div class="list">
                 <h3>31 Aug 2077</h3>
                 <div class="item profit">
@@ -100,6 +99,7 @@
                     <h3>Keuntungan</h3>
                     <h2>- Rp 1.000.000</h2>
                 </div>
+            </div>
             <div class="list">
                 <h3>2 Jun 2077</h3>
                 <div class="item profit">
@@ -111,10 +111,57 @@
             </div>
         </div>
     </div>
+</div>
 
+    @endsection @section('js')
+    <script>
+        const items = document.querySelectorAll(".list");
+        const listContainer = document.querySelector('.list-container')
+        var months = document.querySelectorAll(".month > h3");
 
-@endsection
+        months.forEach((ele) => {
+            ele.addEventListener("click", function (e) {
+                const sorted = sortByMonth(items, ele.innerHTML, false)
+                listContainer.innerHTML = ''
+                if(sorted.length == 0){
+                    const emptyAlert = document.createElement("div")
+                    emptyAlert.innerHTML = `<div class="empty-alert">
+                        There is no investment detail in ${ele.innerHTML}
+                    </div>`
+                    listContainer.append(emptyAlert)
+                }
+                else{
+                    sorted.forEach((ele) => {
+                        listContainer.append(ele)
+                    })
+                }
+                resetToggle(months)
+                ele.classList.toggle('active')
+            });
+        });
 
-@section('js')
+        function sortByMonth(element, target, isAll) {
+            var result = []
 
-@endsection
+            element.forEach((ele) => {
+                var date = ele.querySelector('h3').innerHTML
+                if(getMonth(date) === target){
+                    result.push(ele)
+                }
+            })
+
+            return result
+        }
+        function getMonth(date) {
+            var splitDate = date.split(" ");
+            return splitDate[1];
+        }
+
+        function resetToggle(elements){
+            elements.forEach((ele) => {
+                ele.className = ''
+            })
+        }
+    </script>
+    @endsection
+</div>

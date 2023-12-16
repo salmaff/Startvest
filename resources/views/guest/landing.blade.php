@@ -128,7 +128,9 @@
             @foreach ($rows as $row)
                 <div class="projects-row">
                     @foreach ($cols as $col)
+                    <a href="/project/detail">
                         <x-productCard />
+                    </a>
                     @endforeach
                 </div>
             @endforeach

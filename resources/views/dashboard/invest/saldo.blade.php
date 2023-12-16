@@ -53,10 +53,12 @@
             <div class="list-wrapper">
                 <div class="list-item">
                     <img src="{{ asset('static/image/cak/logo/logo-hire.png') }}" alt="">
-                    <div class="tulisan-konten">
-                        <h4>H!re</h4>
-                        <p>Temukan pekerjaan impianmu dengan mudah dengan H!ire</p>
-                    </div>
+                    <a href="{{ route('dashboard.invest.detail') }}">
+                        <div class="tulisan-konten">
+                            <h4>H!re</h4>
+                            <p>Temukan pekerjaan impianmu dengan mudah dengan H!ire</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="list-item">
                     <img src="{{ asset('static/image/cak/logo/logo-fire.png') }}" alt="">

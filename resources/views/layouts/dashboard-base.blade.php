@@ -26,7 +26,7 @@
                 @switch($currentRoute)
                     @case('main')
                         <a id="active" href="{{ route('dashboard.main') }}">Dashboard</a>
-                        <a href="{{ route('dashboard.invest.detail') }}">Investasi Saya</a>
+                        <a href="{{ route('dashboard.invest.saldo') }}">Investasi Saya</a>
                         <a href="{{ route('dashboard.riwayat') }}">Riwayat Return</a>
                         <a href="{{ route('dashboard.profile.edit') }}">Profil</a>
                         <div class="sub-menu">
@@ -42,7 +42,7 @@
                         @break
                     @case('invest')
                         <a href="{{ route('dashboard.main') }}">Dashboard</a>
-                        <a id="active" href="{{ route('dashboard.invest.detail') }}">Investasi Saya</a>
+                        <a id="active" href="{{ route('dashboard.invest.saldo') }}">Investasi Saya</a>
                         <a href="{{ route('dashboard.riwayat') }}">Riwayat Return</a>
                         <a href="{{ route('dashboard.profile.edit') }}">Profil</a>
                         <div class="sub-menu">
@@ -58,7 +58,7 @@
                         @break
                     @case('riwayat')
                         <a href="{{ route('dashboard.main') }}">Dashboard</a>
-                        <a href="{{ route('dashboard.invest.detail') }}">Investasi Saya</a>
+                        <a href="{{ route('dashboard.invest.saldo') }}">Investasi Saya</a>
                         <a id="active" href="{{ route('dashboard.riwayat') }}">Riwayat Return</a>
                         <a href="{{ route('dashboard.profile.edit') }}">Profil</a>
                         <div class="sub-menu">
@@ -74,7 +74,7 @@
                         @break
                     @case('profile')
                         <a href="{{ route('dashboard.main') }}">Dashboard</a>
-                        <a href="{{ route('dashboard.invest.detail') }}">Investasi Saya</a>
+                        <a href="{{ route('dashboard.invest.saldo') }}">Investasi Saya</a>
                         <a href="{{ route('dashboard.riwayat') }}">Riwayat Return</a>
                         <a id="active" href="{{ route('dashboard.profile.edit') }}">Profil</a>
                         <div class="sub-menu">
@@ -108,7 +108,7 @@
                         @break
                     @case('notif')
                         <a href="{{ route('dashboard.main') }}">Dashboard</a>
-                        <a href="{{ route('dashboard.invest.detail') }}">Investasi Saya</a>
+                        <a href="{{ route('dashboard.invest.saldo') }}">Investasi Saya</a>
                         <a href="{{ route('dashboard.riwayat') }}">Riwayat Return</a>
                         <a href="{{ route('dashboard.profile.edit') }}">Profil</a>
                         <div class="sub-menu">

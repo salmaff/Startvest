@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="{{ url('static/css/anggun/payment-method-style.css') }}">
-<script src="static/js/anggun/payment-method-script.js"></script>
+<script src="{{ url("static/js/anggun/payment-method-script.js") }}"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 @extends('layouts.main')
@@ -50,9 +50,12 @@
                     </div>
                 </div>
             </div>
-            <button class="meth-finpay">
-                Bayar
-            </button>
+            <a href="/payment/detail">
+                <button class="meth-finpay">
+                    Bayar
+                </button>
+            </a>
         </div>
     </div>
+    <script type="module" src="{{ url('static/js/anggun/payment-method-script.js') }}"></script>
 @endsection
