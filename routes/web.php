@@ -28,8 +28,8 @@ Route::prefix('project')->group(function(){
 });
 
 Route::get('/', function () {
-    return view('guest.landing')->name("landing");
-});
+    return view('guest.landing');
+})->name("landing");
 
 
 Route::prefix('auth')->group(function (){

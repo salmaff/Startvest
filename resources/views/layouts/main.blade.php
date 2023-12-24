@@ -27,9 +27,15 @@
                         <object data="{{ url('/static/image/rizfi/logo.svg') }}" type=""></object>
                     </div>
                     <ul class="links">
-                        <li>Home</li>
-                        <li>Project</li>
-                        <li>Dashboard</li>
+                        <a href="{{ route("landing") }}">
+                            <li>Home</li>
+                        </a>
+                        <a href="{{ route("project.landing") }}">
+                            <li>Project</li>
+                        </a>
+                        <a href="{{ route("dashboard.main") }}">
+                            <li>Dashboard</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="button-container">

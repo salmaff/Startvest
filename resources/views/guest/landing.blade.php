@@ -14,9 +14,11 @@
                 Danai ide terbaik Anda untuk menjadi <br>
                 produk nyata dan jadilah kontributor
             </div>
-            <div class="find-project">
-                Temukan Project
-            </div>
+            <a href="{{ route("project.landing") }}" class="">
+                <div class="find-project">
+                    Temukan Project
+                </div>
+            </a>
         </div>
         <div class="caption-cards">
             <div class="big-card">
@@ -115,9 +117,11 @@
                 Project baru yang bisa <br>
                 Anda kerjakan
             </div>
-            <div class="all-projects">
-                Lihat semua
-            </div>
+            <a href="{{ route("project.landing") }}">
+                <div class="all-projects">
+                    Lihat semua
+                </div>
+            </a>
         </div>
         <div class="projects">
             @php

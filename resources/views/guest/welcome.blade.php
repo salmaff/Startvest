@@ -24,9 +24,11 @@
                 Akun Anda telah terdaftar <br>
                 di sistem!
             </div>
-            <div class="start-btn">
-                Start Explore
-            </div>
+            <a href="{{ route("project.landing") }}">
+                <div class="start-btn">
+                    Start Explore
+                </div>
+            </a>
         </div>
     </div>
 </body>
