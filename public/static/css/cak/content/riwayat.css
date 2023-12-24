@@ -72,6 +72,10 @@
     z-index: 10;
 }
 
+/* #filter-card .active {
+    display: block;
+} */
+
 .filter-name {
     cursor: pointer;
     width: 100%;

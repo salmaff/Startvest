@@ -185,6 +185,7 @@
             filterCard.style.display === ""
                 ? "block"
                 : "none";
+        <!-- filterCard.classList.toggle("active"); -->
     });
 
     //Get All Start Up Name
@@ -240,6 +241,18 @@
             sorted.forEach((ele) => {
                 wrapperContainer.appendChild(ele);
             });
+
+            resetHighlight(document.querySelectorAll(".startup-name"))
+
+            selectedCompanyClass = ele.querySelector(".startup-name")
+            selectedCompanyClass.classList.toggle("active")
+
+            //Remove Filter Card
+            filterCard.style.display =
+            filterCard.style.display === "none" ||
+            filterCard.style.display === ""
+                ? "block"
+                : "none";
         });
     });
 
@@ -256,6 +269,12 @@
         });
 
         return result;
+    }
+
+    function resetHighlight(names){
+        names.forEach((name) => {
+            name.classList.remove("active")
+        })
     }
 </script>
 @endsection
