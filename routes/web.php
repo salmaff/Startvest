@@ -16,31 +16,31 @@ use PHPUnit\TextUI\XmlConfiguration\Group;
 
 
 Route::prefix('payment')->group(function (){
-    Route::view('/', 'guest.payment');
-    Route::view('/detail', 'guest.payment-detail');
-    Route::view('/method', 'guest.payment-method');
-    Route::view('/success', 'guest.payment-success');
+    Route::view('/', 'guest.payment')->name("payment");
+    Route::view('/detail', 'guest.payment-detail')->name("payment.detail");
+    Route::view('/method', 'guest.payment-method')->name("payment.method");
+    Route::view('/success', 'guest.payment-success')->name("payment.success");
 });
 
 Route::prefix('project')->group(function(){
-    Route::view('/', 'guest.landing_product');
-    Route::View('/detail', 'guest.project-detail');
+    Route::view('/', 'guest.landing_product')->name("project.landing");
+    Route::View('/detail', 'guest.project-detail')->name("project.detail");
 });
 
 Route::get('/', function () {
-    return view('guest.landing');
+    return view('guest.landing')->name("landing");
 });
 
 
 Route::prefix('auth')->group(function (){
-    Route::view('', 'guest.landing');
+    Route::view('', 'guest.landing')->name("auth.landing");
 });
 
-Route::view('/signup', 'guest.signup');
-Route::view('/signup/photo', 'guest.photo');
-Route::view('/add_credit', 'guest.add_credit');
-Route::view('/welcome', 'guest.welcome');
-Route::view('/signin', 'guest.signin');
+Route::view('/signup', 'guest.signup')->name("signup");
+Route::view('/signup/photo', 'guest.photo')->name("signup.photo");
+Route::view('/add_credit', 'guest.add_credit')->name("signup.add_credit");
+Route::view('/welcome', 'guest.welcome')->name("welcome");
+Route::view('/signin', 'guest.signin')->name("signin");
 
 Route::prefix('dashboard')->group(function () {
     Route::name('dashboard.')->group(function () {

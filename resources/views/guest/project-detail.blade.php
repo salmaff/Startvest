@@ -90,13 +90,13 @@
                 </div>
             </div>
             <div class="benefit">
-                <img src="static/image/anggun/Checklist.png" />
+                <img src="{{ url("static/image/anggun/Checklist.png") }}" />
                 <div class="ben-text">
                     Special service or product that startup has
                 </div>
             </div>
             <div class="benefit">
-                <img src="static/image/anggun/Checklist.png" />
+                <img src="{{ url("static/image/anggun/Checklist.png") }}" />
                 <div class="ben-text">
                     You can also sell your equity once the startup going IPO
                 </div>
