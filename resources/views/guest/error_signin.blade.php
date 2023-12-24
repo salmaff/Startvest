@@ -18,6 +18,14 @@
             {{-- <img src="{{ url('static/image/rizfi/signup-img.png') }}" alt=""> --}}
         </div>
         <div class="inputs-container">
+            <div class="auth-error">
+                <div class="error-caption">
+                    Maaf, Anda belum masuk
+                </div>
+                {{-- <div class="error-icon"> --}}
+                    <iconify-icon class="error-icon" icon="material-symbols:cancel-outline" style="color: #ff872e;" width="40" height="40"></iconify-icon>
+                {{-- </div> --}}
+            </div>
             <h2>Masuk ke Akunmu</h2>
             <div class="input-container">
                 <div class="input">
@@ -69,6 +77,12 @@
             pwInput.setAttribute("type", type)
 
             eyeIcon.setAttribute("icon", icon)
+        })
+
+        const errorIcon = document.querySelector(".error-icon")
+        const errorCaption = document.querySelector(".auth-error")
+        errorIcon.addEventListener("click", (e)=>{
+            errorCaption.style.display = "none"
         })
     </script>
 </body>

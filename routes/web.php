@@ -41,6 +41,7 @@ Route::view('/signup/photo', 'guest.photo')->name("signup.photo");
 Route::view('/add_credit', 'guest.add_credit')->name("signup.add_credit");
 Route::view('/welcome', 'guest.welcome')->name("welcome");
 Route::view('/signin', 'guest.signin')->name("signin");
+Route::view('/error/signin', 'guest.error_signin')->name("signin.error");
 
 Route::prefix('dashboard')->group(function () {
     Route::name('dashboard.')->group(function () {

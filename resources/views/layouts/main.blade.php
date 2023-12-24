@@ -33,9 +33,15 @@
                         <a href="{{ route("project.landing") }}">
                             <li>Project</li>
                         </a>
+                        @if (Request::segment(1) === 'auth')
                         <a href="{{ route("dashboard.main") }}">
                             <li>Dashboard</li>
                         </a>
+                        @else
+                        <a href="{{ route("signin.error") }}">
+                            <li>Dashboard</li>
+                        </a>
+                        @endif
                     </ul>
                 </div>
                 <div class="button-container">

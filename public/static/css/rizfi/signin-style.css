@@ -26,6 +26,32 @@ h2 {
     margin-top: 25vh;
 }
 
+.auth-error {
+    border-radius: 34px;
+    /* border: 1px solid #fff; */
+    background: rgba(255, 255, 255, 0.75);
+    padding: 10px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-caption {
+    color: #ff2e2e;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.error-icon {
+    position: relative;
+    left: 70px;
+}
+
 .input-container {
     margin-top: 40px;
 }
