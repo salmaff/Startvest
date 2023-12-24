@@ -113,5 +113,5 @@
 }
 
 .wrapper > :last-child {
-    color: var(--color-red);
+    color: var(--color-green);
 }

@@ -104,7 +104,7 @@
                 <h2>H!re</h2>
             </div>
             <h3>Returns</h3>
-            <h2>- Rp 1.000.000</h2>
+            <h2>Rp 1.000.000</h2>
         </div>
         <div class="wrapper">
             <img
@@ -116,7 +116,7 @@
                 <h2>F!re</h2>
             </div>
             <h3>Returns</h3>
-            <h2>- Rp 2.000.000</h2>
+            <h2>Rp 2.000.000</h2>
         </div>
         <div class="wrapper">
             <img
@@ -128,7 +128,7 @@
                 <h2>Skola</h2>
             </div>
             <h3>Returns</h3>
-            <h2>- Rp 3.000.000</h2>
+            <h2>Rp 3.000.000</h2>
         </div>
         <div class="wrapper">
             <img
@@ -140,7 +140,7 @@
                 <h2>H!re</h2>
             </div>
             <h3>Returns</h3>
-            <h2>- Rp 1.000.000</h2>
+            <h2>Rp 1.000.000</h2>
         </div>
         <div class="wrapper">
             <img
@@ -152,7 +152,7 @@
                 <h2>F!re</h2>
             </div>
             <h3>Returns</h3>
-            <h2>- Rp 2.000.000</h2>
+            <h2>Rp 2.000.000</h2>
         </div>
         <div class="wrapper">
             <img
@@ -164,7 +164,7 @@
                 <h2>F!ame</h2>
             </div>
             <h3>Returns</h3>
-            <h2>- Rp 2.000.000</h2>
+            <h2>Rp 2.000.000</h2>
         </div>
     </div>
 </div>

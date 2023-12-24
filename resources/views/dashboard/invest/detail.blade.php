@@ -41,6 +41,7 @@
     </div>
     <div class="part">
         <div class="month">
+            <h3>All</h3>
             <h3>Jan</h3>
             <h3>Feb</h3>
             <h3>Mar</h3>
@@ -120,8 +121,11 @@
         var months = document.querySelectorAll(".month > h3");
 
         months.forEach((ele) => {
+            if(ele.innerHTML === "All"){
+                ele.classList.add("active")
+            }
             ele.addEventListener("click", function (e) {
-                const sorted = sortByMonth(items, ele.innerHTML, false)
+                const sorted = ele.innerHTML === "All"? sortByMonth(items, ele.innerHTML, true) : sortByMonth(items, ele.innerHTML, false)
                 listContainer.innerHTML = ''
                 if(sorted.length == 0){
                     const emptyAlert = document.createElement("div")
@@ -143,13 +147,17 @@
         function sortByMonth(element, target, isAll) {
             var result = []
 
+            if (isAll){
+                result = element
+                return result
+            }
+
             element.forEach((ele) => {
                 var date = ele.querySelector('h3').innerHTML
                 if(getMonth(date) === target){
                     result.push(ele)
                 }
             })
-
             return result
         }
         function getMonth(date) {
