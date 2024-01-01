@@ -31,7 +31,9 @@
     <div class="content">
         <div class="statistic">
             <h2>Investasi Anda</h2>
-            <div class="graph"><p>Ini grafik</p></div>
+            <div class="graph">
+                <object data="{{ asset('static/image/rizfi/grafik.svg') }}" width="100%" type=""></object>
+            </div>
             <div class="sub-statistic">
                 <div>
                     <p>Jumlah Investasi Anda</p>

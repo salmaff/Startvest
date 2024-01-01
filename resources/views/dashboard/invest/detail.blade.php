@@ -37,7 +37,9 @@
     </div>
     <div class="part">
         <h1>Keuntungan</h1>
-        <p>Ini Grafik</p>
+        <div class="graph">
+            <object data="{{ asset('static/image/rizfi/line-graph.svg') }}" width="100%" type=""></object>
+        </div>
     </div>
     <div class="part">
         <div class="month">
